@@ -1,0 +1,36 @@
+/* Initial float-in animation */
+.floating-div {
+    animation: slide-down 1s ease-out;
+  }
+  
+  /* Disappear animation */
+  .slide-up {
+    animation: fade-up 1s ease-in forwards;
+  }
+  
+  /* Keyframes for slide down */
+  @keyframes slide-down {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Keyframes for slide up and fade */
+  @keyframes fade-up {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+    }
+    100% {
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden; /* Remove it from the page */
+    }
+  }
+  

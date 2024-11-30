@@ -1,0 +1,271 @@
+html, body{
+width: 100%;
+height: 100%;
+margin: 0;
+padding: 0;
+font-family:'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    /* flex-direction: column; */
+    /* height: 100vh;  */
+    /* position: relative; */
+    margin: 0;
+  }
+  
+  .left-section {
+    position: sticky; /* Ensures the image stays in view while scrolling */
+    top: 0;
+    left: 0;
+    flex: 0 0 40%; /* 45% of horizontal axis */
+    height: 100vh; /* Full height of the viewport */
+    margin: 0; /* Ensure no spacing around the left section */
+    padding: 0; /* Remove internal spacing */
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    /* background: rgba(0, 0, 0, 0.5); Optional for better readability */
+  }
+
+  .back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    padding-top: 1rem;
+    padding-left: 2rem;
+  }
+
+  .therapist-card{
+    background: #fff;
+    border-radius: 1rem;
+    width: 20rem;
+    height: 25rem;
+    display: flex; /* Ensure content inside the card is aligned */
+    flex-direction: column;
+    justify-content: flex-start; /* Center content horizontally */
+    align-items: center; /*Center content vertically*/
+    text-align: center;
+    padding: 10px;
+    position: relative; /*for child elements to be placed inside*/
+  }
+
+  .share-icon{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    cursor: pointer;
+  }
+
+  .therapist-details{
+    margin-top: 0;
+  }
+
+  .therapist-pic{
+    padding-top: 0.6rem;
+    padding-bottom: 0;
+  }
+
+  .tp-name-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 0;
+  }
+
+  .tp-name-name{
+    color: black;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+
+  .tp-profession{
+    font-size: 1rem;
+    color: #737373;
+    margin-top: 0;
+
+  }
+
+  .experience{
+    font-size: 0.9rem;
+    color: #000;
+    margin-top: 0;
+  }
+
+  .session-start{
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #000;
+  }
+
+  .price{
+    font-size: 1rem;
+  }
+
+  .session{
+    color: #848484;
+  }
+
+  .location{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 0;
+  }
+
+  .loc-p{
+    color: #7F7F7F;
+    font-size: 0.9rem;
+  }
+
+  .book-session{
+    position: absolute;
+    width: 19rem;
+    padding: 1rem;
+    background: #fff;
+    color: #0069D5;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 1.8rem;
+    margin-top: 34rem;
+    border: none;
+    transition: all 0.3s ease;
+  }
+
+  .book-session button {
+    all: unset; /* Reset button styles to avoid browser defaults */
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+
+  .book-session:hover {
+    background: #E4E8EB; /* Change background color */
+    border: 0.1rem solid #fff; /* Add thin white border */
+  }
+
+  /* .therapist-card p{
+    margin: 0;
+    font-size: 1rem;
+    color: #000;
+    text-align: center;
+  } */
+  
+  .right-section {
+    flex: 1; /* Occupies the remaining horizontal space */
+    padding: 4rem;
+    overflow: auto; /*Ensures the content is scrollable*/
+  }
+
+  .aboutme{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    color: #000;
+    width: 44rem;
+    height: 10.4rem;
+  }
+
+  .aboutme-head{
+    font-size: 1.5rem;
+  }
+
+  .aboutme-desc{
+    font-size: 1.125rem;
+    word-spacing: 0.1rem;
+    color: #4C5863;
+    line-height: 1.5rem;
+  }
+
+  .credentials{
+    margin-top: 3.5rem;
+    padding: 0;
+    position: relative;
+  }
+
+  .cred-head{
+    font-size: 1.5rem;
+    color: #000;
+  }
+
+  .cred-list {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+    margin: 0;
+  }
+
+  .cred-list li {
+    display: flex; /* Align image and text horizontally */
+    align-items: center; /* Center-align image and text vertically */
+    gap: 0.75rem; /* Space between the image and text */
+    margin-bottom: 1.5rem; /* Space between each list item */
+    font-size: 1rem; /* Adjust font size as needed */
+    color: #516E8A; /* Adjust text color */
+  }
+  
+  .cred-list img {
+    width: 1.5rem; /* Set width of the custom icon */
+    height: 1.5rem; /* Set height of the custom icon */
+  }
+
+  .available{
+    margin-top: 3.5rem;
+    padding: 0;
+    position: relative;
+  }
+
+  .avail-head{
+    font-size: 1.5rem;
+    color: #000;
+  }
+
+  .avail-options {
+    display: flex;
+    gap: 3.5rem; /* Space between the items */
+  }
+
+  .avail-item {
+    display: flex;
+    flex-direction: column; /* Stack the image and text vertically */
+    align-items: center; /* Center align the image and text */
+  }
+
+  .avail-img {
+    width: 6.375rem; /* Adjust size as necessary */
+    height: 6.375rem; /* Adjust size as necessary */
+    padding: 0.5rem; /* Adjust padding to ensure the image has some space around it */
+    border-radius: 0.8rem; /* Rounded corners for the image */
+  }
+  
+  .avail-item p {
+    font-size: 1rem;
+    color: #516E8A; /* Adjust color to match your design */
+    margin-top: 0.5rem; /* Space between the image and text */
+  }
+
+  
+  
+
+
+  
