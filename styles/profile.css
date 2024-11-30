@@ -15,13 +15,12 @@ font-family:'Poppins', sans-serif;
   }
   
   .left-section {
-    position: sticky; /* Ensures the image stays in view while scrolling */
-    top: 0;
+    position: sticky; 
     left: 0;
-    flex: 0 0 40%; /* 45% of horizontal axis */
-    height: 100vh; /* Full height of the viewport */
-    margin: 0; /* Ensure no spacing around the left section */
-    padding: 0; /* Remove internal spacing */
+    flex: 0 0 40%; 
+    height: 100vh; 
+    margin: 0; 
+    padding: 0; 
   }
   
   .overlay-content {
@@ -35,7 +34,7 @@ font-family:'Poppins', sans-serif;
     align-items: center;
     color: white;
     text-align: center;
-    /* background: rgba(0, 0, 0, 0.5); Optional for better readability */
+    /* background: rgba(0, 0, 0, 0.5);  */
   }
 
   .back{
@@ -57,13 +56,13 @@ font-family:'Poppins', sans-serif;
     border-radius: 1rem;
     width: 20rem;
     height: 25rem;
-    display: flex; /* Ensure content inside the card is aligned */
+    display: flex; 
     flex-direction: column;
-    justify-content: flex-start; /* Center content horizontally */
-    align-items: center; /*Center content vertically*/
+    justify-content: flex-start;
+    align-items: center; 
     text-align: center;
     padding: 10px;
-    position: relative; /*for child elements to be placed inside*/
+    position: relative; 
   }
 
   .share-icon{
@@ -153,7 +152,7 @@ font-family:'Poppins', sans-serif;
   }
 
   .book-session button {
-    all: unset; /* Reset button styles to avoid browser defaults */
+    all: unset;
     display: block;
     width: 100%;
     height: 100%;
@@ -161,8 +160,8 @@ font-family:'Poppins', sans-serif;
   }
 
   .book-session:hover {
-    background: #E4E8EB; /* Change background color */
-    border: 0.1rem solid #fff; /* Add thin white border */
+    background: #E4E8EB; 
+    border: 0.1rem solid #fff; 
   }
 
   /* .therapist-card p{
@@ -173,9 +172,9 @@ font-family:'Poppins', sans-serif;
   } */
   
   .right-section {
-    flex: 1; /* Occupies the remaining horizontal space */
+    flex: 1; 
     padding: 4rem;
-    overflow: auto; /*Ensures the content is scrollable*/
+    overflow: auto; 
   }
 
   .aboutme{
@@ -210,23 +209,23 @@ font-family:'Poppins', sans-serif;
   }
 
   .cred-list {
-    list-style: none; /* Remove default bullet points */
+    list-style: none; 
     padding: 0;
     margin: 0;
   }
 
   .cred-list li {
-    display: flex; /* Align image and text horizontally */
-    align-items: center; /* Center-align image and text vertically */
-    gap: 0.75rem; /* Space between the image and text */
-    margin-bottom: 1.5rem; /* Space between each list item */
-    font-size: 1rem; /* Adjust font size as needed */
-    color: #516E8A; /* Adjust text color */
+    display: flex;
+    align-items: center; 
+    gap: 0.75rem; 
+    margin-bottom: 1.5rem; 
+    font-size: 1rem;
+    color: #516E8A; 
   }
   
   .cred-list img {
-    width: 1.5rem; /* Set width of the custom icon */
-    height: 1.5rem; /* Set height of the custom icon */
+    width: 1.5rem;
+    height: 1.5rem; 
   }
 
   .available{
@@ -242,26 +241,26 @@ font-family:'Poppins', sans-serif;
 
   .avail-options {
     display: flex;
-    gap: 3.5rem; /* Space between the items */
+    gap: 3.5rem; 
   }
 
   .avail-item {
     display: flex;
-    flex-direction: column; /* Stack the image and text vertically */
-    align-items: center; /* Center align the image and text */
+    flex-direction: column;
+    align-items: center;
   }
 
   .avail-img {
-    width: 6.375rem; /* Adjust size as necessary */
-    height: 6.375rem; /* Adjust size as necessary */
-    padding: 0.5rem; /* Adjust padding to ensure the image has some space around it */
-    border-radius: 0.8rem; /* Rounded corners for the image */
+    width: 6.375rem;
+    height: 6.375rem; 
+    padding: 0.5rem; 
+    border-radius: 0.8rem;
   }
   
   .avail-item p {
     font-size: 1rem;
-    color: #516E8A; /* Adjust color to match your design */
-    margin-top: 0.5rem; /* Space between the image and text */
+    color: #516E8A; 
+    margin-top: 0.5rem;
   }
 
   
